@@ -216,18 +216,18 @@ const SolutionsSection = () => {
     {
       title: "Custom Seasoning Blends",
       description:
-        "Tailored flavour profiles crafted to meet your specific product requirements and consumer preferences.",
-      icon: <Leaf className="text-emerald-500" size={48} />,
+        "Tailored flavour profiles crafted to meet your specific product requirements.",
+      icon: <Leaf className="text-emerald-500" size={32} />,
     },
     {
       title: "Food Science Innovation",
       description: "Cutting-edge research and development to create next-generation seasoning solutions.",
-      icon: <Award className="text-emerald-500" size={48} />,
+      icon: <Award className="text-emerald-500" size={32} />,
     },
     {
       title: "Sustainable Solutions",
       description: "Environmentally conscious products that support both great taste and planetary health.",
-      icon: <Target className="text-emerald-500" size={48} />,
+      icon: <Target className="text-emerald-500" size={32} />,
     },
   ]
 
@@ -284,7 +284,7 @@ const SolutionsSection = () => {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className={`group relative bg-emerald-50/50 rounded-3xl p-8 shadow-lg  hover:shadow-xl transform hover:-translate-y-2 transition-all duration-200 overflow-hidden ${
+              className={`group relative bg-emerald-50/50 rounded-3xl p-4 shadow-lg  hover:shadow-xl transform hover:-translate-y-2 transition-all duration-200 overflow-hidden ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
               }`}
               style={{

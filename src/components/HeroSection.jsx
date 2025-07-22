@@ -102,7 +102,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-emerald-50 to-white relative overflow-hidden mt-20"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-emerald-50 to-white relative overflow-hidden mt-20 py-25"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -123,7 +123,7 @@ const HeroSection = () => {
             guided by purpose.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="bg-emerald-600 text-white hover:bg-white hover:text-emerald-600 hover:border-2 px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
               Explore Solutions
             </button>
             <button className="border-2 border-emerald-600 text-emerald-600 bg-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300">
