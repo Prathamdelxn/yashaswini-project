@@ -555,11 +555,11 @@ const ContactSection = () => {
 
               {/* Business Hours Card */}
               <div
-                className={`bg-white rounded-2xl p-6 shadow-lg border border-slate-200 transition-all duration-500 delay-1300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                className={`group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl border border-slate-200 hover:bg-white transition-all duration-1300 hover:scale-105 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                   }`}
               >
                 <div className="flex items-start space-x-4">
-                  <div className="bg-white p-3 rounded-xl">
+                  <div className="p-3 rounded-xl bg-slate-100 p-3 rounded-xl group-hover:bg-emerald-100 transition-colors duration-300 group-hover:scale-110">
                     <Clock size={24} className="text-emerald-500" />
                   </div>
                   <div>

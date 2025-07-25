@@ -67,11 +67,11 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 Career
               </a>
-              <a href="#contact"
+              {/* <a href="#contact"
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 Contact Us
-              </a>
+              </a> */}
             </div>
           </div>
 
