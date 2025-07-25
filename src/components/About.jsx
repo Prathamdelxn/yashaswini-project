@@ -481,7 +481,7 @@ const AboutSection = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className={`group flex items-center space-x-3 bg-white p-4 rounded-xl hover:bg-emerald-50 transition-all duration-500 hover:scale-105 ${
+                className={`group flex items-center space-x-3 bg-white p-4 rounded-xl hover:bg-emerald-50  transition-all duration-500 hover:scale-105 ${
                   isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
                 }`}
               >
@@ -489,7 +489,7 @@ const AboutSection = () => {
                   size={20}
                   className="text-emerald-600 group-hover:scale-110 transition-transform duration-300"
                 />
-                <span className="font-medium text-slate-800 group-hover:text-emerald-700 transition-colors duration-300">
+                <span className="font-medium text-slate-800 cursor-pointer group-hover:text-emerald-700 transition-colors duration-300">
                   {value}
                 </span>
               </div>

@@ -54,6 +54,7 @@
 
 "use client"
 import React from 'react';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -61,14 +62,20 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
-              <div className="text-2xl font-bold text-emerald-300">Yashasveeni</div>
-              <div className="ml-2 text-sm text-emerald-300">Spices</div>
+            <div className="relative h-20 w-48"> {/* Adjusted container size */}
+              <Image 
+                src="/images/resized-logo.png" 
+                alt="Yashasveeni Logo"
+                fill
+                style={{ objectFit: 'contain' }}
+                className="h-20 w-20" // If you really need the red background
+              />
             </div>
-            <p className="text-emerald-300 leading-relaxed">
+            <p className="text-emerald-300 leading-relaxed mt-4">
               Driven by vision, anchored by values. Creating flavour solutions that transform the food industry.
             </p>
           </div>
+          {/* Rest of your footer content remains the same */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-emerald-100">Solutions</h4>
             <ul className="space-y-2 text-emerald-200">
@@ -80,8 +87,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-emerald-100">Company</h4>
             <ul className="space-y-2 text-emerald-200">
-              <li><a href="#" className="hover:text-white transition-colors duration-300">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Careers</a></li>
+              <li><a href="#about" className="hover:text-white transition-colors duration-300">About Us</a></li>
+              <li><a href="#career" className="hover:text-white transition-colors duration-300">Careers</a></li>
               <li><a href="#" className="hover:text-white transition-colors duration-300">News</a></li>
             </ul>
           </div>
@@ -95,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-emerald-700 mt-12 pt-8 text-center text-emerald-300">
-          <p>&copy; 2025 VKL Spices. All rights reserved.</p>
+          <p>&copy; 2025 Yashasveeni. All rights reserved.</p>
         </div>
       </div>
     </footer>

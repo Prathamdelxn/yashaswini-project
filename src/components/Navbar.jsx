@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -34,36 +35,41 @@ const Navbar = () => {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - aligned to left */}
-          <div className="flex-shrink-0 flex items-center">
-            <div className="text-2xl font-bold text-green-600">Yashasveeni</div>
-            <div className="ml-2 text-sm text-gray-600">Spices</div>
+          <div className="relative h-20 w-30 ">
+            <Image
+              src="/images/yashasveeni-logo-resized.png"
+              alt="Yashasveeni Logo"
+              fill
+              style={{ objectFit: 'contain' }}
+              className="" // If you really need the red background
+            />
           </div>
 
           {/* Desktop Navigation - centered */}
           <div className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">
-            <div className="flex space-x-6 lg:space-x-8 text-lg">
+            <div className="flex space-x-10 lg:space-x-12 text-sm">
               <a href="#"
-              className="text-gray-700 hover:text-green-600 transition-colors duration-300">
+                className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 Home
               </a>
               <a href="#about"
-              onClick={() => scrollToSection('about')}
-              className="text-gray-700 hover:text-green-600 transition-colors duration-300">
+                onClick={() => scrollToSection('about')}
+                className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 About
               </a>
               <a href="#solutions"
-              onClick={() => scrollToSection('solutions')} 
-              className="text-gray-700 hover:text-green-600 transition-colors duration-300">
+                onClick={() => scrollToSection('solutions')}
+                className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 Solutions
               </a>
               <a href="#career"
-              onClick={() => scrollToSection('career')} 
-              className="text-gray-700 hover:text-green-600 transition-colors duration-300">
+                onClick={() => scrollToSection('career')}
+                className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 Career
               </a>
               <a href="#contact"
-              onClick={() => scrollToSection('contact')}
-              className="text-gray-700 hover:text-green-600 transition-colors duration-300">
+                onClick={() => scrollToSection('contact')}
+                className="text-gray-700 hover:text-green-600 transition-colors duration-300">
                 Contact Us
               </a>
             </div>
