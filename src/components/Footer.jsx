@@ -188,7 +188,7 @@ const Footer = () => {
           <div className="ml-10">
             <h4 className="text-md font-bold mb-6 text-emerald-100 relative">
               Solutions
-              <div className="absolute bottom-0 left-0 w-23 h-0.5 bg-gradient-to-r from-emerald-400 to-green-400"></div>
+              <div className="absolute bottom-0 left-0 w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-green-400"></div>
             </h4>
             <ul className="space-y-3">
               {["Custom Seasoning", "Food Science", "Sustainability", "Quality Assurance"].map((item, index) => (
@@ -209,7 +209,7 @@ const Footer = () => {
           <div className="ml-10">
             <h4 className="text-md font-bold mb-6 text-emerald-100 relative">
               Company
-              <div className="absolute bottom-0 left-0 w-23 h-0.5 bg-gradient-to-r from-emerald-400 to-green-400"></div>
+              <div className="absolute bottom-0 left-0 w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-green-400"></div>
             </h4>
             <ul className="space-y-3">
               {[
@@ -235,7 +235,7 @@ const Footer = () => {
           <div className="ml-10">
             <h4 className="text-md font-bold mb-6 text-emerald-100 relative">
               Connect
-              <div className="absolute bottom-0 left-0 w-21 h-0.5 bg-gradient-to-r from-emerald-400 to-green-400"></div>
+              <div className="absolute bottom-0 left-0 w-18 h-0.5 bg-gradient-to-r from-emerald-400 to-green-400"></div>
             </h4>
             <ul className="space-y-3">
               {[
