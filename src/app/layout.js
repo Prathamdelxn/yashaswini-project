@@ -8,7 +8,7 @@ import ShoppingCart from '@/components/ShoppingCart';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'VKL Spices',
+  title: 'Yashasveeni',
   description: 'Your one-stop shop for spices and more!',
 };
 
