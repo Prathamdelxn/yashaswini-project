@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Yashasveeni',
+  icons: {
+    icon: "/favicon1.ico", 
+  },
   description: 'Your one-stop shop for spices and more!',
 };
 
